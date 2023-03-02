@@ -1,12 +1,12 @@
 package com.dan.bank.dto;
 
-import lombok.Builder;
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Value;
 
 import java.time.LocalDate;
 
-@Data
-@Builder
+@Value
+@AllArgsConstructor
 public class Subscription {
     String bankcard;
     LocalDate startDate;

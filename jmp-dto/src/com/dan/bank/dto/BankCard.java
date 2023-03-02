@@ -1,12 +1,10 @@
 package com.dan.bank.dto;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.experimental.SuperBuilder;
+import lombok.Value;
+import lombok.experimental.NonFinal;
 
-@Data
-@SuperBuilder
-@NoArgsConstructor
+@Value
+@NonFinal
 public class BankCard {
     String number;
     User user;

@@ -1,11 +1,12 @@
 package com.dan.bank.dto;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.experimental.SuperBuilder;
+import lombok.Value;
 
-@Data
-@SuperBuilder
-@NoArgsConstructor
+@Value
 public class DebitBankCard extends BankCard {
+
+    public DebitBankCard(String number, User user){
+        super(number, user);
+    }
+
 }
